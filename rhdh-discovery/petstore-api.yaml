@@ -13,6 +13,8 @@ kind: System
 metadata:
   name: petstore
   title: Petstore System
+  annotations:
+    backstage.io/techdocs-ref: dir:./docs
 spec:
   owner: petstore-devs
 ---
@@ -38,15 +40,4 @@ spec:
   lifecycle: staging
   definition:
     $openapi: https://github.com/OAI/OpenAPI-Specification/blob/main/examples/v3.0/petstore.yaml
----
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: petstore
-  description: MyApp is an example application.
-  annotations:
-    backstage.io/techdocs-ref: dir:./docs
-spec:
-  system: petstore
-  owner: petstore-devs
-  lifecycle: staging
+
