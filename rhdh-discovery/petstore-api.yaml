@@ -13,8 +13,6 @@ kind: System
 metadata:
   name: petstore
   title: Petstore System
-  annotations:
-    backstage.io/techdocs-ref: dir:./docs
 spec:
   owner: petstore-devs
 ---
